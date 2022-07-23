@@ -7,7 +7,6 @@ import AboutItem from '../components/about'
 
 import {useState, useEffect} from 'react'
 import Image from 'next/image'
-import headDuck from '../images/headDuck.png'
 import cabinDuck from '../images/cabinDuck.PNG'
 import introDuck from '../images/introDuck.PNG'
 import hacktams from '../images/hacktams1.jpg'
@@ -83,7 +82,6 @@ export default function Home() {
     <div className='overflow-hidden'>
       <Head>
         <title>hackTAMS 2023</title>
-        <link rel="icon" src={headDuck}/>
       </Head>
 
       <div id="home" className="h-screen bg-[url('../images/intro_crop.PNG')] bg-no-repeat bg-center bg-cover">
