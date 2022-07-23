@@ -83,7 +83,7 @@ export default function Home() {
     <div className='overflow-hidden'>
       <Head>
         <title>hackTAMS 2023</title>
-        <link rel="icon" href="../images/headDuck.png" />
+        <link rel="icon" src={headDuck}/>
       </Head>
 
       <div id="home" className="h-screen bg-[url('../images/intro_crop.PNG')] bg-no-repeat bg-center bg-cover">
