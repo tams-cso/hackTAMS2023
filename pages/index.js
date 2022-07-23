@@ -90,11 +90,11 @@ export default function Home() {
           </div>
           {/*button div*/}
           <div className='flex justify-center'>
-            <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' className='min-w-fit py-10 px-4 bg-c3 text-2xl mt-10 text-white rounded-2xl hover:bg-c5 lg:p-12'>registration portal</a>
+            <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='min-w-fit py-10 px-4 bg-c3 text-2xl mt-10 text-white rounded-2xl hover:bg-c5 lg:p-12'>registration portal</a>
           </div>
           {/*duck image*/}
           <div className='w-full h-72 overflow-hidden relative ml-[0rem] lg:ml-[30rem] lg:pb-28'>
-            <Image src={introDuck}/>
+            <Image src={introDuck} alt='duck on home screen'/>
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@ export default function Home() {
         <div className='flex flex-col-reverse m-auto justify-around my-6 lg:flex-row lg:my-12 lg:w-2/3'> 
           {/*image*/} 
           <div className='max-w-sm mt-12 mx-auto px-6 lg:px-0 lg:my-auto'>
-            <Image src={hacktams} className='rounded-xl'/>
+            <Image src={hacktams} className='rounded-xl' alt='picture from hacktams 2021'/>
           </div>
           {/*words*/}
           <div className='max-w-xl px-8 my-auto mx-auto'>
@@ -144,7 +144,7 @@ export default function Home() {
             <div className='flex flex-col justify-evenly pt-12 space-y-10 relative lg:flex-row'>
               {/*gif*/}
               <div className='md:w-1/2 mx-auto px-16 md:px-0 lg:ml-10 lg:my-auto xl:pt-24 xl:px-20'>
-                <Image src={cabinDuck}/>
+                <Image src={cabinDuck} alt='duck in challenges'/>
               </div>
               {/*challenges*/}
               <div className='px-8 sm:px-20 md:px-24 grid grid-flow-col grid-cols-1 grid-rows-4 gap-6 lg:w-2/3 lg:grid-cols-2 lg:grid-rows-2 xl:mx-0 xl:w-2/3'>
@@ -167,19 +167,19 @@ export default function Home() {
         <div className='flex flex-col md:flex-row px-0 mx-auto justify-around pb-4'>
           {/*images*/}
           <div className='h-1/4 w-96 flex flex-row px-6 mx-auto mt-12 md:hidden'>
-            <Image src={penguinDuck}/>
-            <Image src={penguinDuckM}/>
+            <Image src={penguinDuck} alt='penguin duck 1 in faq small screen'/>
+            <Image src={penguinDuckM} alt='penguin duck 2 in faq small screen'/>
           </div>
           <div className='h-1/4 w-48 mt-[32rem] mr-8 hidden md:block'>
-            <Image src={penguinDuck}/>
+            <Image src={penguinDuck} alt='penguin duck 1 in faq large screen'/>
           </div>
           <div className="faqs">
             {faqs.map((faq, i) => (
-              <FaqDropdown faq={faq} index={i} toggleFAQ={toggleFAQ}/>
+              <FaqDropdown key={1} faq={faq} index={i} toggleFAQ={toggleFAQ}/>
             ))}
           </div>
           <div className='h-1/4 w-48 ml-8 mt-[10rem] hidden md:block'>
-            <Image src={penguinDuckM}/>
+            <Image src={penguinDuckM} alt='penguin duck 2 in faq large screen'/>
           </div>
         </div>
       </div>
@@ -252,7 +252,7 @@ export default function Home() {
                   </div>
                   {/*logo*/}
                   <div className='hidden md:block -mt-4'>
-                    <a href='#home'><Image src={navDuckMd}/></a>
+                    <a href='#home'><Image src={navDuckMd} alt='duck logo in footer'/></a>
                   </div>
                 </div>
                 {/*list container*/}
@@ -262,7 +262,7 @@ export default function Home() {
                     {/*register*/}
                     <div>
                       <h3 className='text-c9 font-bold'>register</h3> 
-                      <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' className='text-c4 hover:text-white'>registration link</a>
+                      <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='text-c4 hover:text-white'>registration link</a>
                     </div>
                     {/*donate*/}
                     <div>
@@ -280,12 +280,12 @@ export default function Home() {
                     {/*instagram*/}
                     <div>
                       <h3 className='text-c9 font-bold'>instagram</h3> 
-                      <a href="https://www.instagram.com/hacktams/" className='text-c4 hover:text-white' target='_blank'>https://www.instagram.com/hacktams/</a>
+                      <a href="https://www.instagram.com/hacktams/" className='text-c4 hover:text-white' target='_blank' rel='noreferrer'>https://www.instagram.com/hacktams/</a>
                     </div>
                     {/*discord*/}
                     <div>
                       <h3 className='text-c9 font-bold'>discord server</h3> 
-                      <a href="https://discord.gg/zxHRW34B" className='text-c4 hover:text-white' target='_blank'>https://discord.gg/zxHRW34B</a>
+                      <a href="https://discord.gg/zxHRW34B" className='text-c4 hover:text-white' target='_blank' rel='noreferrer'>https://discord.gg/zxHRW34B</a>
                     </div>
                   </div>
                 </div>

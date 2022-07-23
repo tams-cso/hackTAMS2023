@@ -21,10 +21,10 @@ function NavBarPage(props) {
             <div className='flex items-center justify-between lg:justify-around'>
                 {/*nav logo*/}
                 <div className='hidden sm:block max-w-xs pt-2'>
-                    <Image src={navDuckBtwn}/>
+                    <Image src={navDuckBtwn} alt='duck in nav bar for large screens'/>
                 </div>
                 <div className='block sm:hidden max-w-xs pt-2'>
-                    <Image src={navDuckSmall}/>
+                    <Image src={navDuckSmall} alt='duck in nav bar for small screens'/>
                 </div>
                 {/*menu items*/}
                 <div className='hidden space-x-6 text-white text-2xl md:flex'>
@@ -44,8 +44,8 @@ function NavBarPage(props) {
             </div>
 
             {toggleMenu && (
-            <div class="md:hidden">
-                <div id="menu" class="absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white left-6 right-6 drop-shadow-md sm:w-auto sm:self-center">
+            <div className="md:hidden">
+                <div id="menu" className="absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white left-6 right-6 drop-shadow-md sm:w-auto sm:self-center">
                     <a href="#about" className='hover:text-c18'>about</a>
                     <a href="#tracks" className='hover:text-c18'>tracks</a>
                     <a href="#challenges" className='hover:text-c18'>challenges</a>

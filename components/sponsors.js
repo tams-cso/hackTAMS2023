@@ -4,10 +4,13 @@ function SponsorCard(props) {
             <a href="#" target="_blank">
                 <img src={props.link} alt=""/>
             </a>
-        </div>*/
+        </div>
         <a href="#" target="_blank">
             <img src={props.link} alt=""/>
-        </a>
+        </a>*/
+        <div>
+            
+        </div>
     )
 }
 
