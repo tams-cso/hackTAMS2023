@@ -1,8 +1,7 @@
 import {useState, useEffect} from 'react'
 import Hamburger from 'hamburger-react'
 import Image from 'next/image'
-import navDuckMd from '../images/navDuckMd.PNG'
-import navDuckBtwn from '../images/navDuckBtwn.PNG'
+import navDuckBtwn from '../images/navDuckBtwn.png'
 import navDuckSmall from '../images/navDuckSmall.PNG'
 
 function NavBarPage(props) {
