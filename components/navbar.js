@@ -34,7 +34,7 @@ function NavBarPage(props) {
                     <a href="#sponsors" className='hover:text-c5'>sponsors</a>
                 </div>
                 {/*button*/}
-                <a href="#footer" className='hidden px-6 py-3.5 text-white bg-c3 rounded-full baseline hover:bg-c5 md:block'>contact us</a>
+                <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='hidden px-6 py-3.5 text-white bg-c3 rounded-full baseline hover:bg-c5 md:block'>registration</a>
 
                 {/*hamburger icon*/}
                 <div className="inline-block md:hidden" onClick={toggleNav}>

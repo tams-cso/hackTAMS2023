@@ -82,22 +82,26 @@ export default function Home() {
     <div className='overflow-hidden'>
       <Head>
         <title>hackTAMS 2023</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/> 
       </Head>
 
-      <div id="home" className="h-screen bg-[url('../images/intro_crop.PNG')] bg-no-repeat bg-center bg-cover">
+      <div id="home" className="h-screen bg-[url('../images/intro_crop2.PNG')] bg-no-repeat bg-center bg-cover">
         <NavbarPage/>
         <div className='flex flex-col justify-around h-5/6'>
           {/*text div*/}
           <div className='space-y-12'> 
-            <h1 className='text-7xl font-bold text-center text-white lg:text-9xl'>hackTAMS</h1>
-            <h2 className='text-4xl text-center text-white lg:text-7xl'>2/18/23 - 2/19/23</h2>
+            <div>
+              <h1 className='text-7xl font-bold text-center text-white lg:text-9xl'>hackTAMS</h1>
+              <h1 className='text-7xl font-bold text-center text-white lg:text-9xl'>2023</h1>
+            </div>
+            <h2 className='text-4xl text-center text-white lg:text-6xl font-bold'>02.18 - 02.19</h2>
           </div>
-          {/*button div*/}
+          {/*button div
           <div className='flex justify-center'>
             <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='min-w-fit py-10 px-4 bg-c3 text-2xl mt-10 text-white rounded-2xl hover:bg-c5 lg:p-12'>registration portal</a>
-          </div>
+          </div>*/}
           {/*duck image*/}
-          <div className='w-full h-72 overflow-hidden relative ml-[0rem] lg:ml-[30rem] lg:pb-28'>
+          <div className='w-full h-72 relative ml-[0rem] lg:ml-[28rem] mb-[6rem]'>
             <Image src={introDuck} alt='duck on home screen'/>
           </div>
         </div>
@@ -112,7 +116,7 @@ export default function Home() {
             <Image src={hacktams} className='rounded-xl' alt='picture from hacktams 2021'/>
           </div>
           {/*words*/}
-          <div className='max-w-xl px-8 my-auto mx-auto'>
+          <div className='max-w-xl px-4 my-auto mx-auto'>
             <h4 className='text-xl text-center lg:text-justify'>hackTAMS is an annual hackathon organized by students at the Texas Academy of Mathematics and Science. A hackathon is a coding marathon where students design, build, and present a project - typically software and sometimes hardware - within a short period of time. Our event lets high school students from across Texas showcase their talent and creativity through coding projects and presentations. Students will have access to workshops, guest speakers, networking opportunities, and other fun and informative events while working on their projects.</h4>
           </div>
         </div> 
