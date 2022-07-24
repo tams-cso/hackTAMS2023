@@ -86,27 +86,28 @@ export default function Home() {
         <meta property="og:url" content="https://2023.hacktams.org"/>
         <meta property="og:title" content="hackTAMS 2023"/>
         <meta property="og:description" content="hackTAMS is an annual hackathon organized by students at the Texas Academy of Mathematics and Science for students in the Dallas-Fort Worth area."/>
+        <meta property="og:image" content="https://2023.hacktams.org/titlePage.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/> 
         <meta name="theme-color" content="#7f8aad"/>
       </Head>
 
-      <div id="home" className="h-screen bg-[url('../images/intro_crop2.PNG')] bg-no-repeat bg-center bg-cover">
+      <div id="home" className="h-screen bg-[url('../images/intro_crop3.PNG')] bg-no-repeat bg-center bg-cover">
         <NavbarPage/>
-        <div className='flex flex-col justify-around h-5/6'>
+        <div className='flex flex-col justify-around max-h-fit'>
           {/*text div*/}
-          <div className='mt-10 sm:mt-0 space-y-12'> 
+          <div className='mt-16 sm:mt-10 md:mt-0 space-y-12 relative'> 
             <div>
-              <h1 className='text-6xl sm:text-7xl font-bold text-center text-white lg:text-9xl'>hackTAMS</h1>
-              <h1 className='text-6xl sm:text-7xl font-bold text-center text-white lg:text-9xl'>2023</h1>
+              <h1 className='font-bold text-center text-white text-6xl sm:text-7xl md:text-8xl lg:text-9xl'>hackTAMS</h1>
+              <h1 className='font-bold text-center text-white text-6xl sm:text-7xl md:text-8xl lg:text-9xl'>2023</h1>
             </div>
-            <h2 className='text-4xl text-center text-white lg:text-6xl font-bold'>02.18 - 02.19</h2>
+            <h2 className='text-4xl text-center text-white md:text-5xl lg:text-6xl font-bold'>02.18 - 02.19</h2>
           </div>
           {/*button div
           <div className='flex justify-center'>
             <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='min-w-fit py-10 px-4 bg-c3 text-2xl mt-10 text-white rounded-2xl hover:bg-c5 lg:p-12'>registration portal</a>
           </div>*/}
           {/*duck image*/}
-          <div className='w-full h-72 relative sm:mb-12 lg:mb-[6rem] lg:ml-[28rem]'>
+          <div className='w-full h-72 relative mt-28 md:mt-0 lg:mb-[6rem] lg:ml-[28rem]'>
             <Image src={introDuck} alt='duck on home screen'/>
           </div>
         </div>
