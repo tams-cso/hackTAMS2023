@@ -9,7 +9,7 @@ import {useState, useEffect} from 'react'
 import Image from 'next/image'
 import cabinDuck from '../images/cabinDuck.PNG'
 import introDuck from '../images/introDuck.PNG'
-import hacktams from '../images/hacktams1.jpg'
+import hacktams from '../images/hacktams.jpg'
 import penguinDuck from '../images/penguinDuck.PNG'
 import penguinDuckM from '../images/penguinDuckM.png'
 import navDuckMd from '../images/navDuckMd.png'
@@ -82,17 +82,22 @@ export default function Home() {
     <div className='overflow-hidden'>
       <Head>
         <title>hackTAMS 2023</title>
+        <meta name="description" content="hackTAMS is an annual hackathon organized by students at the Texas Academy of Mathematics and Science for students in the Dallas-Fort Worth area."/>
+        <meta property="og:url" content="https://2023.hacktams.org"/>
+        <meta property="og:title" content="hackTAMS 2023"/>
+        <meta property="og:description" content="hackTAMS is an annual hackathon organized by students at the Texas Academy of Mathematics and Science for students in the Dallas-Fort Worth area."/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/> 
+        <meta name="theme-color" content="#7f8aad"/>
       </Head>
 
       <div id="home" className="h-screen bg-[url('../images/intro_crop2.PNG')] bg-no-repeat bg-center bg-cover">
         <NavbarPage/>
         <div className='flex flex-col justify-around h-5/6'>
           {/*text div*/}
-          <div className='space-y-12'> 
+          <div className='mt-10 sm:mt-0 space-y-12'> 
             <div>
-              <h1 className='text-7xl font-bold text-center text-white lg:text-9xl'>hackTAMS</h1>
-              <h1 className='text-7xl font-bold text-center text-white lg:text-9xl'>2023</h1>
+              <h1 className='text-6xl sm:text-7xl font-bold text-center text-white lg:text-9xl'>hackTAMS</h1>
+              <h1 className='text-6xl sm:text-7xl font-bold text-center text-white lg:text-9xl'>2023</h1>
             </div>
             <h2 className='text-4xl text-center text-white lg:text-6xl font-bold'>02.18 - 02.19</h2>
           </div>
@@ -101,7 +106,7 @@ export default function Home() {
             <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='min-w-fit py-10 px-4 bg-c3 text-2xl mt-10 text-white rounded-2xl hover:bg-c5 lg:p-12'>registration portal</a>
           </div>*/}
           {/*duck image*/}
-          <div className='w-full h-72 relative ml-[0rem] lg:ml-[28rem] mb-[6rem]'>
+          <div className='w-full h-72 relative sm:mb-12 lg:mb-[6rem] lg:ml-[28rem]'>
             <Image src={introDuck} alt='duck on home screen'/>
           </div>
         </div>

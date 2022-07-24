@@ -50,7 +50,7 @@ function NavBarPage(props) {
                     <a href="#challenges" className='hover:text-c18'>challenges</a>
                     <a href="#faq" className='hover:text-c18'>faq</a>
                     <a href="#sponsors" className='hover:text-c18'>sponsors</a>
-                    <a href="#footer" className='hover:text-c18'>contact us</a>
+                    <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='hover:text-c18'>registration</a>
                 </div>
             </div>)}
             
