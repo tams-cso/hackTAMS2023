@@ -108,7 +108,7 @@ export default function Home() {
             <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='min-w-fit py-10 px-4 bg-c3 text-2xl mt-10 text-white rounded-2xl hover:bg-c5 lg:p-12'>registration portal</a>
           </div>*/}
           {/*duck image*/}
-          <div className='w-full h-full relative mt-28 md:mt-0 lg:mb-[6rem] lg:ml-[28rem]'>
+          <div className='w-full h-full relative mt-20 lg:mt-8 lg:mb-[6rem] lg:ml-[25rem]'>
             <Image src={introDuck} alt='duck on home screen'/>
           </div>
         </div>
