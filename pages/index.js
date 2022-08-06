@@ -98,10 +98,13 @@ export default function Home() {
           {/*text div*/}
           <div className='mt-16 sm:mt-10 md:mt-0 space-y-12'> 
             <div>
-              <h1 className='font-bold text-center text-white text-6xl sm:text-7xl md:text-8xl lg:text-9xl'>hackTAMS</h1>
-              <h1 className='font-bold text-center text-white text-6xl sm:text-7xl md:text-8xl lg:text-9xl'>2023</h1>
+              <h1 className='font-bold text-center text-white text-6xl sm:text-7xl md:text-8xl lg:text-[120px]'>hackTAMS</h1>
+              <h1 className='font-bold text-center text-white text-6xl sm:text-7xl md:text-8xl lg:text-[120px]'>2023</h1>
             </div>
-            <h2 className='text-4xl text-center text-white md:text-5xl lg:text-6xl font-bold'>02.18 - 02.19</h2>
+            <div className='space-y-2'>
+              <h2 className='text-4xl text-center text-white md:text-5xl lg:text-5xl font-bold'>02.18 - 02.19</h2>
+              <h2 className='text-3xl text-center text-white font-bold md:text-[38px]'>@Willis Library - UNT</h2>
+            </div>
           </div>
           {/*button div
           <div className='flex justify-center'>
@@ -281,7 +284,7 @@ export default function Home() {
                     {/*register*/}
                     <div>
                       <h3 className='text-c9 font-bold'>register</h3> 
-                      <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='text-c4 hover:text-white'>registration link</a>
+                      <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='text-c4 hover:text-white'>pre-registration link</a>
                     </div>
                     {/*donate*/}
                     <div>

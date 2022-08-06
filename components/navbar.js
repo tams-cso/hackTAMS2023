@@ -34,7 +34,7 @@ function NavBarPage(props) {
                     <a href="#sponsors" className='hover:text-c5'>sponsors</a>
                 </div>
                 {/*button*/}
-                <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='hidden px-6 py-3.5 text-white bg-c3 rounded-full baseline hover:bg-c5 md:block'>registration</a>
+                <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='hidden px-6 py-3.5 text-white bg-c3 rounded-full baseline hover:bg-c5 md:block'>pre-register</a>
 
                 {/*hamburger icon*/}
                 <div className="inline-block md:hidden" onClick={toggleNav}>
@@ -50,7 +50,7 @@ function NavBarPage(props) {
                     <a href="#challenges" className='hover:text-c18'>challenges</a>
                     <a href="#faq" className='hover:text-c18'>faq</a>
                     <a href="#sponsors" className='hover:text-c18'>sponsors</a>
-                    <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='hover:text-c18'>registration</a>
+                    <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='hover:text-c18'>pre-register</a>
                 </div>
             </div>)}
             
