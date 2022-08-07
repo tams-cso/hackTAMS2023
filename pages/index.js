@@ -102,8 +102,8 @@ export default function Home() {
               <h1 className='font-bold text-center text-white text-6xl sm:text-7xl md:text-8xl lg:text-[120px]'>2023</h1>
             </div>
             <div className='space-y-2'>
-              <h2 className='text-4xl text-center text-white md:text-5xl lg:text-5xl font-bold'>02.18 - 02.19</h2>
-              <h2 className='text-3xl text-center text-white font-bold md:text-[38px]'>@Willis Library - UNT</h2>
+              <h2 className='text-4xl text-center text-white md:text-5xl font-bold'>02.18 - 02.19</h2>
+              <h2 className='text-3xl text-center text-white font-bold md:text-[38px]'>@Willis Library (UNT)</h2>
             </div>
           </div>
           {/*button div
