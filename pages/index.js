@@ -1,5 +1,3 @@
-import Head from 'next/head'
-import Script from 'next/script'
 import NavbarPage from '../components/navbar'
 import TrackInfo from '../components/tracks'
 import ChallengeInfo from '../components/challenges'
@@ -13,11 +11,18 @@ import introDuck from '../images/introDuck.PNG'
 import hacktams from '../images/hacktams.jpg'
 import penguinDuck from '../images/penguinDuck.PNG'
 import penguinDuckM from '../images/penguinDuckM.png'
-import navDuckMd from '../images/navDuckMd.png'
+import navDuckBtwn from '../images/navDuckBtwn.png'
 import workshops from '../images/workshops.PNG'
 import guest_speaker1 from '../images/GuestSpeaker1.PNG'
 import college from '../images/CollegePanels.PNG'
 import fun_activities from '../images/FunActivities.PNG'
+
+import hackplus from '../images/hackplus.svg'
+import mlh from '../images/mlh.svg'
+import taskade from '../images/taskade.png'
+import scrimba from '../images/scrimba.png'
+import standoutStickers from '../images/standoutStickers.png'
+import wolframAlpha from '../images/wolframAlpha.png'
 
 
 export default function Home() {
@@ -81,29 +86,19 @@ export default function Home() {
 
   return (
     <div className='overflow-hidden'>
-      <Head>
-        <title>hackTAMS 2023</title>
-        <meta name="description" content="hackTAMS is an annual hackathon organized by students at the Texas Academy of Mathematics and Science for students in the Dallas-Fort Worth area."/>
-        <meta property="og:url" content="https://2023.hacktams.org"/>
-        <meta property="og:title" content="hackTAMS 2023"/>
-        <meta property="og:description" content="hackTAMS is an annual hackathon organized by students at the Texas Academy of Mathematics and Science for students in the Dallas-Fort Worth area."/>
-        <meta property="og:image" content="https://2023.hacktams.org/titlePage.png"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
-        <meta name="theme-color" content="#7f8aad"/>
-      </Head>
 
       <div id="home" className="h-screen bg-[url('../images/intro_crop3.PNG')] bg-no-repeat bg-center bg-cover">
         <NavbarPage/>
-        <div className='flex flex-col justify-around max-h-fit'>
+        <div className='flex flex-col justify-around max-h-fit'> {/*pt-36*/}
           {/*text div*/}
           <div className='mt-16 sm:mt-10 md:mt-0 space-y-12'> 
             <div>
-              <h1 className='font-bold text-center text-white text-6xl sm:text-7xl md:text-8xl lg:text-[120px]'>hackTAMS</h1>
+              <h1 className='font-bold text-center text-white text-6xl sm:text-7xl md:text-8xl lg:text-[120px] pt-32'>hackTAMS</h1>
               <h1 className='font-bold text-center text-white text-6xl sm:text-7xl md:text-8xl lg:text-[120px]'>2023</h1>
             </div>
             <div className='space-y-2'>
-              <h2 className='text-4xl text-center text-white md:text-5xl font-bold'>02.18 - 02.19</h2>
-              <h2 className='text-3xl text-center text-white font-bold md:text-[38px]'>@Willis Library (UNT)</h2>
+              <h2 className='text-4xl text-center text-c3 md:text-5xl font-black'>02.18 - 02.19</h2>
+              <h2 className='text-3xl text-center text-c3 md:text-[40px] font-black'>@Willis Library (UNT)</h2>
             </div>
           </div>
           {/*button div
@@ -205,59 +200,37 @@ export default function Home() {
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="105%" height="100%" viewBox="0 0 5000 550"><path d="M0 142c0 78.1.3 142 .6 142s8.5-1.3 18.2-3C183 253.4 373 226.7 491 214.6c124-12.8 220.1-14.5 323-6 69.1 5.7 148.5 18.5 210.8 33.9 79.4 19.6 124.5 38.1 220.2 90 31.7 17.2 107.8 55.6 127 64 49.9 21.9 100.7 34.9 150.2 38.4 21.1 1.6 73.1 1.3 93.8-.4 83.8-6.8 156.2-23.1 269.7-60.6 78.5-25.9 109.5-35 149.8-44.3 56.2-12.8 97.1-17.8 148-17.8 66.1-.1 132.3 10.7 221 36.2 55.9 16 93.7 30.1 215 79.8 89.6 36.7 126.9 48.9 181 59.1 110.5 20.9 238.5 13.8 388-21.5 82.1-19.4 170.1-48.4 243.5-80.2 69.4-30.1 115.6-55.2 224-121.8 50.4-31 84.8-50.1 119.5-66.3 107.2-49.9 202.5-71.9 291.9-67.2 79 4.1 142.7 19.3 196.8 46.7 18.5 9.5 32.2 17.9 70.8 43.9 47.1 31.7 66.2 42.6 94.4 54.2 39.1 16.1 73.3 23.8 131.1 29.5 17.7 1.8 98.3 1.8 116 0 68.6-6.8 128.2-20 183-40.7 48.9-18.4 97-43.8 132.3-69.8l8.2-6.1V0H0v142z" fill="#6a463d"/></svg>
       </div>
 
-      <div id="sponsors" className='bg-c1 px-8 mb-6 sm:px-20 md:px-24'>
-        <div className='w-full m-auto py-12'>
-          {/*title*/}
-          <div>
-            <h2 className='text-c2 font-bold text-6xl text-center pt-8'>sponsors</h2>
-            <h3 className='text-center text-4xl py-52'>...coming soon!</h3>
-          </div>
+      <div id="sponsors" className='mb-6 px-8 sm:px-18 md:px-24'>
+        <div className='w-full m-auto pt-12 pb-6'>
+          {/*partners*/}
           <div className='grid justify-center lg:pt-4'>
-            {/*tier 1
-            <div className='flex flex-wrap justify-center items-center lg:flex-row lg:flex-nowrap'>
-              <a href="#" target="_blank">
-                <img className='h-[22rem]' src="https://www.linode.com/wp-content/uploads/2020/09/Linode_sq_Logo.png"/>
+            <h2 className='text-c2 font-bold text-6xl text-center pt-8 pb-4'>partners</h2>
+            <div className='flex flex-wrap justify-between items-center lg:flex-row'>
+              <a href="https://hackplus.io" target='_blank' rel='noreferrer' className='hover:scale-105 m-auto w-[21rem] p-4'>
+                <Image src={hackplus} alt="hackplus logo in partners section"/>
               </a>
-              <a href="#" target="_blank">
-                <img className='h-52' src="https://image4.owler.com/logo/aops_owler_20170621_155004_original.png"/>
+              <a href="https://mlh.io" target="_blank" rel='noreferrer' className='hover:scale-105 m-auto w-72 p-4'>
+                <Image src={mlh} alt="mlh logo in partners section"/>
               </a>
-            </div>*/}
-            {/*tier 2
-            <div className='flex flex-wrap justify-around items-center lg:space-x-8'>
-              <a href="#" target="_blank">
-                <img className='h-52' src="https://images.squarespace-cdn.com/content/v1/55fc6031e4b054333b891357/1528259567096-7ZJBDPNZRJY2IBA2JRV6/stoke-logo-white.jpg"/>
+            </div>
+          </div>
+          {/*sponsors*/}
+          <div className='grid justify-center pt-6'>
+            <h2 className='text-c2 font-bold text-6xl text-center'>sponsors</h2>
+            <div className='flex flex-wrap justify-evenly items-center lg:flex-row'>
+              <a href="https://www.taskade.com" target='_blank' rel='noreferrer' className='hover:scale-110 m-auto w-52 p-4'>
+                <Image src={taskade} alt="taskade logo in sponsors section"/>
               </a>
-              <a href="#" target="_blank">
-                <img className='h-24' src="https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/27162/FDedZYhLRraWlTG8tqDP"/>
+              <a href="https://scrimba.com" target="_blank" rel='noreferrer' className='hover:scale-110 m-auto w-52 p-4'>
+                <Image src={scrimba} alt="scrimba logo in sponsors section"/>
               </a>
-              <a href="#" target="_blank">
-                <img className='h-24' src="https://www.taskade.com/static_images/taskade-circle-logo-full-black.png"/>
+              <a href="https://www.standoutstickers.com/?utm_campaign=events-league-organizers-spring2022&utm_medium=email&utm_source=customerio-zoho_creator_-_standout_sticker_intro" target="_blank" rel='noreferrer' className='hover:scale-110 m-auto w-52 p-4'>
+                <Image src={standoutStickers} alt="standout stickers logo in sponsors section"/>
               </a>
-              <a href="#" target="_blank">
-                <img className='h-44' src="https://images.squarespace-cdn.com/content/v1/5898c381d1758e28995c527a/1610133691280-C5LM3DZ3HUFNYJ6C5I20/sticker-mule-logo.png"/>
+              <a href="https://www.wolframalpha.com" target="_blank" rel='noreferrer' className='hover:scale-110 m-auto w-52 p-4'>
+                <Image src={wolframAlpha} alt="wolfram alpha logo in sponsors section"/>
               </a>
-              <a href="#" target="_blank">
-                <img className='h-40' src="https://uploads-ssl.webflow.com/61e7d259b7746e3f63f0b6be/620b824f88f93a89e2fcede1_Image6.png"/>
-              </a>
-              <a href="#" target="_blank">
-                <img className='h-28' src="https://images.ctfassets.net/2lpsze4g694w/3L7i9Zly79vpeTehSYozjM/c34c079e522180f311c1e855ef5e3964/wolfram-language-text-logo-copy-1.png?w=800"/>
-              </a>
-              <a href="#" target="_blank">
-                <img className='h-16' src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/wlc8smn6lh4jo9d7auyh"/>
-              </a>
-              <a href="#" target="_blank">
-                <img className='h-36' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwWPVaEcTa5WCW0MkSTBi9ryJ1r2jZoSB95GL0eiLxlTLTphpKE8WKkMCDKDON1DozCEg&usqp=CAU"/>
-              </a>
-            </div>*/}
-            {/*tier 3
-            <div className='flex flex-wrap justify-center items-center space-x-12 pt-8'>
-              <a href="#" target="_blank">
-                <img className='h-14' src="https://community.egghead.io/uploads/default/original/1X/286fcd415deb9f4134f04584b7c21927e5047b68.png"/>
-              </a>
-              <a href="#" target="_blank">
-                <img className='h-20' src="https://seekvectorlogo.com/wp-content/uploads/2018/11/balsamiq-vector-logo.png"/>
-              </a>
-            </div>*/}
+            </div>
           </div>
         </div>
       </div>
@@ -265,7 +238,7 @@ export default function Home() {
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="105%" height="100%" viewBox="0 0 5000 550"><path d="M1299.5 81c43.7 2.2 65.4 9.6 76.8 26.2 11.3 16.3 9.4 33-13.2 116-13.9 51.1-15.3 64.5-8.6 81 9.7 23.7 40.7 45.6 88.5 62.3 62.5 21.9 124 27.9 227.5 22.5 101.4-5.4 212.5-21.4 385-55.6 68.8-13.7 114.7-23.5 239-51.4 154.3-34.6 248.6-49 332.6-50.7 63.5-1.3 119.4 6.9 147.8 21.7 9.9 5.2 19.1 12.2 40.1 30.5 31.3 27.4 50.3 38.8 77 46.4 57.6 16.4 191.8 24.5 287 17.2 63.5-4.9 107.5-10.5 226.5-29 102.6-15.9 194-34 291.5-57.6 14.6-3.5 33.9-8.1 43-10.1 9.1-1.9 20.5-4.9 25.5-6.4 4.9-1.6 20.5-5.8 34.6-9.4 42-10.7 124.6-33.4 134.9-37.1 2.5-.9 7-2.2 10-2.9 3-.8 9.5-2.6 14.5-4 32-9.5 85.1-18.7 134.5-23.3 26.7-2.5 104.4-2.5 132 0 51 4.6 76.8 11.8 94.6 26.3 20.4 16.7 26.6 35.7 23 70.5-2 19.3-2 33.3-.1 42.3 3.9 18.2 14.9 31.2 35.4 41.6 25.5 12.8 77.3 25.8 138.1 34.6 51.4 7.4 85.7 5.6 173-9.2 50.4-8.5 127.2-24.1 221.3-45 33.7-7.4 86.3-18.4 88.4-18.4.2 0 .3 54 .3 120v120H0V374.5l36.8-6.4c120.3-21 220.4-45.4 449.7-109.7 22.5-6.4 53.6-15.1 69-19.4 101.1-28.3 240.2-65.7 313-84 162.1-40.8 273-63.1 355-71.5 14.5-1.5 51.7-3.6 58-3.3 1.6 0 9.7.4 18 .8z" fill="#414247"/></svg>
       </div>
 
-      <footer id="footer" className='bg-c5 relative py-12 lg:pt-8'> 
+      <footer id="footer" className='bg-c5 relative pt-12 pb-16 lg:pt-8'> 
             {/*flex container*/}
             <div className='container flex flex-col justify-between px-8 mx-auto space-y-8 md:flex-row md:space-y-0'>
                 <div className=''>
@@ -274,11 +247,20 @@ export default function Home() {
                   </div>
                   {/*logo*/}
                   <div className='hidden md:block -mt-4'>
-                    <a href='#home'><Image src={navDuckMd} alt='duck logo in footer'/></a>
+                    <a href='#home'><Image src={navDuckBtwn} alt='duck logo in footer'/></a>
                   </div>
                 </div>
                 {/*list container*/}
                 <div className='flex flex-col justify-around space-y-6 md:space-y-0 md:flex-row md:space-x-32'>
+                  {/*mlh code of conduct*/}
+                  <div className='flex flex-col space-y-6 text-white'>
+                    {/*donate*/}
+                    <div>
+                      <h3 className='text-c9 font-bold'>mlh</h3> 
+                      <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target='_blank' rel='noreferrer' className='text-c4 hover:text-white'>code of conduct</a>
+                    </div>
+                  </div>
+
                   {/*register + donate*/}
                   <div className='flex flex-col space-y-6 text-white'>
                     {/*register*/}
@@ -292,6 +274,7 @@ export default function Home() {
                       <a className='text-c4'>donation link</a>
                     </div>
                   </div>
+
                   {/*instagram + discord + email*/}
                   <div className='flex flex-col space-y-6 text-white'>
                     {/*email*/}
