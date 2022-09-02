@@ -23,6 +23,7 @@ import taskade from '../images/taskade.png'
 import scrimba from '../images/scrimba.png'
 import standoutStickers from '../images/standoutStickers.png'
 import wolframAlpha from '../images/wolframAlpha.png'
+import github from '../images/github.png'
 
 
 export default function Home() {
@@ -229,6 +230,9 @@ export default function Home() {
               </a>
               <a href="https://www.wolframalpha.com" target="_blank" rel='noreferrer' className='hover:scale-110 m-auto w-52 p-4'>
                 <Image src={wolframAlpha} alt="wolfram alpha logo in sponsors section"/>
+              </a>
+              <a href="https://github.com" target="_blank" rel='noreferrer' className='hover:scale-110 m-auto w-52 p-4'>
+                <Image src={github} alt="github logo in sponsors section"/>
               </a>
             </div>
           </div>
