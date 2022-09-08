@@ -3,6 +3,7 @@ import TrackInfo from '../components/tracks'
 import ChallengeInfo from '../components/challenges'
 import FaqDropdown from '../components/faq'
 import AboutItem from '../components/about'
+import Sponsor from '../components/sponsors'
 
 import {useState, useEffect} from 'react'
 import Image from 'next/image'
@@ -94,7 +95,7 @@ export default function Home() {
           {/*text div*/}
           <div className='mt-16 sm:mt-10 md:mt-0 space-y-12'> 
             <div>
-              <h1 className='font-bold text-center text-white text-6xl sm:text-7xl md:text-8xl lg:text-[120px] pt-32'>hackTAMS</h1>
+              <h1 className='font-bold text-center text-white text-6xl sm:text-7xl md:text-8xl lg:text-[120px] md:pt-32'>hackTAMS</h1>
               <h1 className='font-bold text-center text-white text-6xl sm:text-7xl md:text-8xl lg:text-[120px]'>2023</h1>
             </div>
             <div className='space-y-2'>
@@ -102,12 +103,8 @@ export default function Home() {
               <h2 className='text-3xl text-center text-c3 md:text-[40px] font-black'>@Willis Library (UNT)</h2>
             </div>
           </div>
-          {/*button div
-          <div className='flex justify-center'>
-            <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='min-w-fit py-10 px-4 bg-c3 text-2xl mt-10 text-white rounded-2xl hover:bg-c5 lg:p-12'>registration portal</a>
-          </div>*/}
           {/*duck image*/}
-          <div className='w-full h-full relative mt-20 lg:mt-8 lg:mb-[6rem] lg:ml-[25rem]'>
+          <div className='w-full h-full relative mt-16 lg:mt-8 lg:mb-[6rem] lg:ml-[25rem]'>
             <Image src={introDuck} alt='duck on home screen'/>
           </div>
         </div>
@@ -207,10 +204,10 @@ export default function Home() {
           <div className='grid justify-center lg:pt-4'>
             <h2 className='text-c2 font-bold text-6xl text-center pt-8 pb-4'>partners</h2>
             <div className='flex flex-wrap justify-between items-center lg:flex-row'>
-              <a href="https://hackplus.io" target='_blank' rel='noreferrer' className='hover:scale-105 m-auto w-[21rem] p-4'>
+              <a href="https://hackplus.io" target='_blank' rel='noreferrer' className='hover:scale-105 m-auto w-[21rem] p-6'>
                 <Image src={hackplus} alt="hackplus logo in partners section"/>
               </a>
-              <a href="https://mlh.io" target="_blank" rel='noreferrer' className='hover:scale-105 m-auto w-72 p-4'>
+              <a href="https://mlh.io" target="_blank" rel='noreferrer' className='hover:scale-105 m-auto w-72 p-6'>
                 <Image src={mlh} alt="mlh logo in partners section"/>
               </a>
             </div>
@@ -219,21 +216,11 @@ export default function Home() {
           <div className='grid justify-center pt-6'>
             <h2 className='text-c2 font-bold text-6xl text-center'>sponsors</h2>
             <div className='flex flex-wrap justify-evenly items-center lg:flex-row'>
-              <a href="https://www.taskade.com" target='_blank' rel='noreferrer' className='hover:scale-110 m-auto w-52 p-4'>
-                <Image src={taskade} alt="taskade logo in sponsors section"/>
-              </a>
-              <a href="https://scrimba.com" target="_blank" rel='noreferrer' className='hover:scale-110 m-auto w-52 p-4'>
-                <Image src={scrimba} alt="scrimba logo in sponsors section"/>
-              </a>
-              <a href="https://www.standoutstickers.com/?utm_campaign=events-league-organizers-spring2022&utm_medium=email&utm_source=customerio-zoho_creator_-_standout_sticker_intro" target="_blank" rel='noreferrer' className='hover:scale-110 m-auto w-52 p-4'>
-                <Image src={standoutStickers} alt="standout stickers logo in sponsors section"/>
-              </a>
-              <a href="https://www.wolframalpha.com" target="_blank" rel='noreferrer' className='hover:scale-110 m-auto w-52 p-4'>
-                <Image src={wolframAlpha} alt="wolfram alpha logo in sponsors section"/>
-              </a>
-              <a href="https://github.com" target="_blank" rel='noreferrer' className='hover:scale-110 m-auto w-52 p-4'>
-                <Image src={github} alt="github logo in sponsors section"/>
-              </a>
+              <Sponsor image={taskade} link='https://www.taskade.com'/>
+              <Sponsor image={scrimba} link='https://scrimba.com'/>
+              <Sponsor image={standoutStickers} link='https://www.standoutstickers.com/?utm_campaign=events-league-organizers-spring2022&utm_medium=email&utm_source=customerio-zoho_creator_-_standout_sticker_intro'/>
+              <Sponsor image={wolframAlpha} link='https://www.wolframalpha.com'/>
+              <Sponsor image={github} link='https://github.com'/>
             </div>
           </div>
         </div>
@@ -251,7 +238,7 @@ export default function Home() {
                   </div>
                   {/*logo*/}
                   <div className='hidden md:block -mt-4'>
-                    <a href='#home'><Image src={navDuckBtwn} alt='duck logo in footer'/></a>
+                    <a href='#home'><Image src={navDuckBtwn} alt='duck logo in footer' placeholder='blur'/></a>
                   </div>
                 </div>
                 {/*list container*/}
@@ -270,7 +257,7 @@ export default function Home() {
                     {/*register*/}
                     <div>
                       <h3 className='text-c9 font-bold'>register</h3> 
-                      <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='text-c4 hover:text-white'>pre-registration link</a>
+                      <a href='https://forms.gle/SnwXTWSjLX88wBf56' target='_blank' rel='noreferrer' className='text-c4 hover:text-white'>registration link</a>
                     </div>
                     {/*donate*/}
                     <div>
@@ -294,7 +281,7 @@ export default function Home() {
                     {/*discord*/}
                     <div>
                       <h3 className='text-c9 font-bold'>discord server</h3> 
-                      <a href="https://discord.gg/zxHRW34B" className='text-c4 hover:text-white' target='_blank' rel='noreferrer'>https://discord.gg/zxHRW34B</a>
+                      <a href="https://discord.gg/fVKDT6Ra5s" className='text-c4 hover:text-white' target='_blank' rel='noreferrer'>https://discord.gg/fVKDT6Ra5s</a>
                     </div>
                   </div>
                 </div>

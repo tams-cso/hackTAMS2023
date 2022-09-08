@@ -26,7 +26,7 @@ function NavBarPage(props) {
                     <a href="#challenges" className='hover:text-c5'>challenges</a>
                     <a href="#faq" className='hover:text-c5'>faq</a>
                     <a href="#sponsors" className='hover:text-c5'>sponsors</a>
-                    <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='hover:text-c5'>pre-register</a>
+                    <a href='https://forms.gle/SnwXTWSjLX88wBf56' target='_blank' rel='noreferrer' className='hover:text-c5'>register</a>
                 </div>
                 <div className="inline-block z-30 lg:hidden" onClick={toggleNav}>
                     <Hamburger toggled={isOpen} toggle={setOpen}/>
@@ -41,7 +41,7 @@ function NavBarPage(props) {
                     <a href="#challenges" className='hover:text-c18'>challenges</a>
                     <a href="#faq" className='hover:text-c18'>faq</a>
                     <a href="#sponsors" className='hover:text-c18'>sponsors</a>
-                    <a href='https://forms.gle/W6cdWQk2nqrQfZzN8' target='_blank' rel='noreferrer' className='hover:text-c18'>pre-register</a>
+                    <a href='https://forms.gle/SnwXTWSjLX88wBf56' target='_blank' rel='noreferrer' className='hover:text-c18'>register</a>
                 </div>
             </div>)}
 
