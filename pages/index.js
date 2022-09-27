@@ -3,7 +3,9 @@ import TrackInfo from '../components/tracks'
 import ChallengeInfo from '../components/challenges'
 import FaqDropdown from '../components/faq'
 import AboutItem from '../components/about'
-import Sponsor from '../components/sponsors'
+import InKindSponsor from '../components/inKindSponsors'
+import BronzeSponsor from '../components/bronzeSponsor'
+import GoldSponsor from '../components/goldSponsor'
 
 import {useState, useEffect} from 'react'
 import Image from 'next/image'
@@ -25,6 +27,9 @@ import scrimba from '../images/scrimba.png'
 import standoutStickers from '../images/standoutStickers.png'
 import wolframAlpha from '../images/wolframAlpha.png'
 import github from '../images/github.png'
+import centered from '../images/centered.png'
+import overleaf from '../images/overleaf.png'
+import voiceflow from '../images/voiceflow.png'
 
 
 export default function Home() {
@@ -213,14 +218,30 @@ export default function Home() {
             </div>
           </div>
           {/*sponsors*/}
-          <div className='grid justify-center pt-6'>
+          <div>
             <h2 className='text-c2 font-bold text-6xl text-center'>sponsors</h2>
-            <div className='flex flex-wrap justify-evenly items-center lg:flex-row'>
-              <Sponsor image={taskade} link='https://www.taskade.com'/>
-              <Sponsor image={scrimba} link='https://scrimba.com'/>
-              <Sponsor image={standoutStickers} link='https://www.standoutstickers.com/?utm_campaign=events-league-organizers-spring2022&utm_medium=email&utm_source=customerio-zoho_creator_-_standout_sticker_intro'/>
-              <Sponsor image={wolframAlpha} link='https://www.wolframalpha.com'/>
-              <Sponsor image={github} link='https://github.com'/>
+            {/*gold sponsors*/}
+            <div className='grid justify-center'>
+              <div className='flex flex-wrap justify-evenly items-center lg:flex-row'>
+                <GoldSponsor image={github} link='https://github.com'/>
+              </div>
+            </div>
+            {/*bronze sponsors*/}
+            <div className='grid justify-center -mt-10'>
+              <div className='flex flex-wrap justify-evenly items-center lg:flex-row'>
+                <BronzeSponsor image={overleaf} link='https://www.overleaf.com'/>
+              </div>
+            </div>
+            {/*in-kind sponsors*/}
+            <div className='grid justify-center'>
+              <div className='flex flex-wrap justify-evenly items-center lg:flex-row'>
+                <InKindSponsor image={taskade} link='https://www.taskade.com'/>
+                <InKindSponsor image={scrimba} link='https://scrimba.com'/>
+                <InKindSponsor image={standoutStickers} link='https://www.standoutstickers.com/?utm_campaign=events-league-organizers-spring2022&utm_medium=email&utm_source=customerio-zoho_creator_-_standout_sticker_intro'/>
+                <InKindSponsor image={wolframAlpha} link='https://www.wolframalpha.com'/>
+                <InKindSponsor image={centered} link='https://www.centered.app'/>
+                <InKindSponsor image={voiceflow} link='https://www.voiceflow.com'/>
+              </div>
             </div>
           </div>
         </div>
