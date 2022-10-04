@@ -55,7 +55,7 @@ a {
 	width: 30px;
 	height: 30px;
 
-	background-image: url('../images/right-arrow.svg');
+	background-image: url('../public/images/right-arrow.svg');
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;

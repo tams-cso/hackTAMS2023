@@ -7,29 +7,31 @@ import InKindSponsor from '../components/inKindSponsors'
 import BronzeSponsor from '../components/bronzeSponsor'
 import GoldSponsor from '../components/goldSponsor'
 
+import {DISCORD_LINK, REGISTRATION_LINK, INSTAGRAM_LINK, MLH_CODE_OF_CONDUCT_LINK} from "../utils/constants";
+
 import {useState, useEffect} from 'react'
 import Image from 'next/image'
-import cabinDuck from '../images/cabinDuck.PNG'
-import introDuck from '../images/introDuck.PNG'
-import hacktams from '../images/hacktams.jpg'
-import penguinDuck from '../images/penguinDuck.PNG'
-import penguinDuckM from '../images/penguinDuckM.png'
-import navDuckBtwn from '../images/navDuckBtwn.png'
-import workshops from '../images/workshops.PNG'
-import guest_speaker1 from '../images/GuestSpeaker1.PNG'
-import college from '../images/CollegePanels.PNG'
-import fun_activities from '../images/FunActivities.PNG'
+import cabinDuck from '../public/images/cabinDuck.PNG'
+import introDuck from '../public/images/introDuck.PNG'
+import hacktams from '../public/images/hacktams.jpg'
+import penguinDuck from '../public/images/penguinDuck.PNG'
+import penguinDuckM from '../public/images/penguinDuckM.png'
+import navDuckBtwn from '../public/images/navDuckBtwn.png'
+import workshops from '../public/images/workshops.PNG'
+import guest_speaker1 from '../public/images/GuestSpeaker1.PNG'
+import college from '../public/images/CollegePanels.PNG'
+import fun_activities from '../public/images/FunActivities.PNG'
 
-import hackplus from '../images/hackplus.svg'
-import mlh from '../images/mlh.svg'
-import taskade from '../images/taskade.png'
-import scrimba from '../images/scrimba.png'
-import standoutStickers from '../images/standoutStickers.png'
-import wolframAlpha from '../images/wolframAlpha.png'
-import github from '../images/github.png'
-import centered from '../images/centered.png'
-import overleaf from '../images/overleaf.png'
-import voiceflow from '../images/voiceflow.png'
+import hackplus from '../public/sponsors/hackplus.svg'
+import mlh from '../public/sponsors/mlh.svg'
+import taskade from '../public/sponsors/taskade.png'
+import scrimba from '../public/sponsors/scrimba.png'
+import standoutStickers from '../public/sponsors/standoutStickers.png'
+import wolframAlpha from '../public/sponsors/wolframAlpha.png'
+import github from '../public/sponsors/github.png'
+import centered from '../public/sponsors/centered.png'
+import overleaf from '../public/sponsors/overleaf.png'
+import voiceflow from '../public/sponsors/voiceflow.png'
 
 
 export default function Home() {
@@ -94,7 +96,7 @@ export default function Home() {
   return (
     <div className='overflow-hidden'>
 
-      <div id="home" className="h-screen bg-[url('../images/intro_crop3.PNG')] bg-no-repeat bg-center bg-cover">
+      <div id="home" className="h-screen bg-[url('../backgrounds/intro_crop.PNG')] bg-no-repeat bg-center bg-cover">
         <NavbarPage/>
         <div className='flex flex-col justify-around max-h-fit'> {/*pt-36*/}
           {/*text div*/}
@@ -115,7 +117,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id='about' className="py-12 bg-cover bg-[url('../images/aboutBg.PNG')] bg-[length:100%_100%]">
+      <div id='about' className="py-12 bg-cover bg-[url('../backgrounds/aboutBg.PNG')] bg-[length:100%_100%]">
         <h1 className='text-c3 text-[80px] text-center font-bold'>about</h1>
         {/*about info*/}
         <div className='flex flex-col-reverse m-auto justify-around my-6 lg:flex-row lg:my-12 lg:w-2/3'> 
@@ -139,7 +141,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id='tracks_challenges' className="bg-[url('../images/ZZ_NEW_Cabin.PNG')] sm:bg-[url('../images/Z_Shorter_TC.PNG')] lg:bg-[url('../images/Z_Short_traincabin_cropped.PNG')] xl:bg-[length:100%_100%] bg-no-repeat bg-center bg-cover">
+      <div id='tracks_challenges' className="bg-[url('../backgrounds/ZZ_NEW_Cabin.PNG')] sm:bg-[url('../backgrounds/Z_Shorter_TC.PNG')] lg:bg-[url('../backgrounds/Z_Short_traincabin_cropped.PNG')] xl:bg-[length:100%_100%] bg-no-repeat bg-center bg-cover">
         <div id="tracks" className='py-36 xl:h-screen'>
           {/*title*/}
           <div className="">
@@ -227,7 +229,7 @@ export default function Home() {
               </div>
             </div>
             {/*bronze sponsors*/}
-            <div className='grid justify-center -mt-10'>
+            <div className='grid justify-center -mt-20'>
               <div className='flex flex-wrap justify-evenly items-center lg:flex-row'>
                 <BronzeSponsor image={overleaf} link='https://www.overleaf.com'/>
               </div>
@@ -269,7 +271,7 @@ export default function Home() {
                     {/*donate*/}
                     <div>
                       <h3 className='text-c9 font-bold'>mlh</h3> 
-                      <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target='_blank' rel='noreferrer' className='text-c4 hover:text-white'>code of conduct</a>
+                      <a href={MLH_CODE_OF_CONDUCT_LINK} target='_blank' rel='noreferrer' className='text-c4 hover:text-white'>code of conduct</a>
                     </div>
                   </div>
 
@@ -277,8 +279,8 @@ export default function Home() {
                   <div className='flex flex-col space-y-6 text-white'>
                     {/*register*/}
                     <div>
-                      <h3 className='text-c9 font-bold'>register</h3> 
-                      <a href='https://forms.gle/SnwXTWSjLX88wBf56' target='_blank' rel='noreferrer' className='text-c4 hover:text-white'>registration link</a>
+                      <h3 className='text-c9 font-bold'>interest form</h3> 
+                      <a href={REGISTRATION_LINK} target='_blank' rel='noreferrer' className='text-c4 hover:text-white'>interest form link</a>
                     </div>
                     {/*donate*/}
                     <div>
@@ -297,12 +299,12 @@ export default function Home() {
                     {/*instagram*/}
                     <div>
                       <h3 className='text-c9 font-bold'>instagram</h3> 
-                      <a href="https://www.instagram.com/hacktams/" className='text-c4 hover:text-white' target='_blank' rel='noreferrer'>https://www.instagram.com/hacktams/</a>
+                      <a href={INSTAGRAM_LINK} className='text-c4 hover:text-white' target='_blank' rel='noreferrer'>https://www.instagram.com/hacktams/</a>
                     </div>
                     {/*discord*/}
                     <div>
                       <h3 className='text-c9 font-bold'>discord server</h3> 
-                      <a href="https://discord.gg/fVKDT6Ra5s" className='text-c4 hover:text-white' target='_blank' rel='noreferrer'>https://discord.gg/fVKDT6Ra5s</a>
+                      <a href={DISCORD_LINK} className='text-c4 hover:text-white' target='_blank' rel='noreferrer'>https://discord.gg/fVKDT6Ra5s</a>
                     </div>
                   </div>
                 </div>

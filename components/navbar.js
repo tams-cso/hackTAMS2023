@@ -1,8 +1,9 @@
 import {useState, useEffect} from 'react'
 import Hamburger from 'hamburger-react'
 import Image from 'next/image'
-import navDuck from '../images/navDuck.PNG'
-import mlhTrustBadgeGrey from '../images/mlh-trust-badge-2023-gray.svg'
+import navDuck from '../public/images/navDuck.PNG'
+import mlhTrustBadgeGrey from '../public/images/mlh-trust-badge-2023-gray.svg'
+import {REGISTRATION_LINK} from "../utils/constants";
 
 function NavBarPage(props) {
     //for mobile menu
@@ -26,7 +27,7 @@ function NavBarPage(props) {
                     <a href="#challenges" className='hover:text-c5'>challenges</a>
                     <a href="#faq" className='hover:text-c5'>faq</a>
                     <a href="#sponsors" className='hover:text-c5'>sponsors</a>
-                    <a href='https://forms.gle/SnwXTWSjLX88wBf56' target='_blank' rel='noreferrer' className='hover:text-c5'>register</a>
+                    <a href={REGISTRATION_LINK} target='_blank' rel='noreferrer' className='hover:text-c5'>interest form</a>
                 </div>
                 <div className="inline-block z-30 lg:hidden" onClick={toggleNav}>
                     <Hamburger toggled={isOpen} toggle={setOpen}/>
@@ -41,7 +42,7 @@ function NavBarPage(props) {
                     <a href="#challenges" className='hover:text-c18'>challenges</a>
                     <a href="#faq" className='hover:text-c18'>faq</a>
                     <a href="#sponsors" className='hover:text-c18'>sponsors</a>
-                    <a href='https://forms.gle/SnwXTWSjLX88wBf56' target='_blank' rel='noreferrer' className='hover:text-c18'>register</a>
+                    <a href={REGISTRATION_LINK} target='_blank' rel='noreferrer' className='hover:text-c18'>interest form</a>
                 </div>
             </div>)}
 
