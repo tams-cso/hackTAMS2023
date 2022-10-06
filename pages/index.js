@@ -7,7 +7,7 @@ import InKindSponsor from '../components/inKindSponsors'
 import BronzeSponsor from '../components/bronzeSponsor'
 import GoldSponsor from '../components/goldSponsor'
 
-import {DISCORD_LINK, REGISTRATION_LINK, INSTAGRAM_LINK, MLH_CODE_OF_CONDUCT_LINK} from "../utils/constants";
+import {DISCORD_LINK, REGISTRATION_LINK, INSTAGRAM_LINK, MLH_CODE_OF_CONDUCT_LINK, DONATION_LINK} from "../utils/constants";
 
 import {useState, useEffect} from 'react'
 import Image from 'next/image'
@@ -32,6 +32,7 @@ import github from '../public/sponsors/github.png'
 import centered from '../public/sponsors/centered.png'
 import overleaf from '../public/sponsors/overleaf.png'
 import voiceflow from '../public/sponsors/voiceflow.png'
+import stoke from '../public/sponsors/stoke.png'
 
 
 export default function Home() {
@@ -232,6 +233,7 @@ export default function Home() {
             <div className='grid justify-center -mt-20'>
               <div className='flex flex-wrap justify-evenly items-center lg:flex-row'>
                 <BronzeSponsor image={overleaf} link='https://www.overleaf.com'/>
+                <BronzeSponsor image={stoke} link='https://stokedenton.com'/>
               </div>
             </div>
             {/*in-kind sponsors*/}
@@ -285,7 +287,7 @@ export default function Home() {
                     {/*donate*/}
                     <div>
                       <h3 className='text-c9 font-bold'>donate</h3> 
-                      <a className='text-c4'>donation link</a>
+                      <a href={DONATION_LINK} className='text-c4 hover:text-white' target='_blank' rel='noreferrer'>donation page</a>
                     </div>
                   </div>
 
