@@ -33,6 +33,7 @@ import centered from '../public/sponsors/centered.png'
 import overleaf from '../public/sponsors/overleaf.png'
 import voiceflow from '../public/sponsors/voiceflow.png'
 import stoke from '../public/sponsors/stoke.png'
+import leangap from '../public/sponsors/leangap.png'
 
 
 export default function Home() {
@@ -234,6 +235,7 @@ export default function Home() {
               <div className='flex flex-wrap justify-evenly items-center lg:flex-row'>
                 <BronzeSponsor image={overleaf} link='https://www.overleaf.com'/>
                 <BronzeSponsor image={stoke} link='https://stokedenton.com'/>
+                <BronzeSponsor image={leangap} link='https://www.leangap.org'/>
               </div>
             </div>
             {/*in-kind sponsors*/}
