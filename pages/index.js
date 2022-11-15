@@ -283,8 +283,8 @@ export default function Home() {
                   <div className='flex flex-col space-y-6 text-white'>
                     {/*register*/}
                     <div>
-                      <h3 className='text-c9 font-bold'>interest form</h3> 
-                      <a href={REGISTRATION_LINK} target='_blank' rel='noreferrer' className='text-c4 hover:text-white'>interest form link</a>
+                      <h3 className='text-c9 font-bold'>registration</h3> 
+                      <a href={REGISTRATION_LINK} target='_blank' rel='noreferrer' className='text-c4 hover:text-white'>registration link</a>
                     </div>
                     {/*donate*/}
                     <div>
