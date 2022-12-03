@@ -76,7 +76,7 @@ export default function Home() {
     },
     {
       question: 'when is registration?', 
-      answer: 'Registration will be open from December 1 to February 1!',
+      answer: 'Registration will be open from December 1 to January 27!',
       open: false
     },
     {
@@ -289,7 +289,8 @@ export default function Home() {
                     {/*donate*/}
                     <div>
                       <h3 className='text-c9 font-bold'>donate</h3> 
-                      <a href={DONATION_LINK} className='text-c4 hover:text-white' target='_blank' rel='noreferrer'>donation page</a>
+                      {/*<a href={DONATION_LINK} className='text-c4 hover:text-white' target='_blank' rel='noreferrer'>donation page</a>*/}
+                      <a className='text-c4'>donation page</a>
                     </div>
                   </div>
 
