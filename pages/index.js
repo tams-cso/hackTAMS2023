@@ -34,7 +34,7 @@ import overleaf from '../public/sponsors/overleaf.png'
 import voiceflow from '../public/sponsors/voiceflow.png'
 import stoke from '../public/sponsors/stoke.png'
 import leangap from '../public/sponsors/leangap.png'
-import techacks from '../public/sponsors/techacks.PNG'
+import techacks from '../public/sponsors/techacks.png'
 
 
 export default function Home() {
