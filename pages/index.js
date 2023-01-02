@@ -7,7 +7,7 @@ import InKindSponsor from '../components/inKindSponsors'
 import BronzeSponsor from '../components/bronzeSponsor'
 import GoldSponsor from '../components/goldSponsor'
 
-import {DISCORD_LINK, REGISTRATION_LINK, INSTAGRAM_LINK, MLH_CODE_OF_CONDUCT_LINK, DONATION_LINK} from "../utils/constants";
+import {DISCORD_LINK, REGISTRATION_LINK, INSTAGRAM_LINK, MLH_CODE_OF_CONDUCT_LINK, DONATION_LINK, DEVPOST_LINK} from "../utils/constants";
 
 import {useState, useEffect} from 'react'
 import Image from 'next/image'
@@ -103,7 +103,7 @@ export default function Home() {
         <NavbarPage/>
         <div className='flex flex-col justify-around max-h-fit'> {/*pt-36*/}
           {/*text div*/}
-          <div className='mt-16 sm:mt-10 md:mt-0 space-y-12'> 
+          <div className='pt-48 sm:pt-40 md:pt-0 space-y-12'> 
             <div>
               <h1 className='font-bold text-center text-white text-6xl sm:text-7xl md:text-8xl lg:text-[120px] md:pt-32'>hackTAMS</h1>
               <h1 className='font-bold text-center text-white text-6xl sm:text-7xl md:text-8xl lg:text-[120px]'>2023</h1>
@@ -158,21 +158,23 @@ export default function Home() {
             <TrackInfo trackName={'prototype track'} trackPar={'The prototype track is for participants who have little to no coding experience. Students will come up with a creative idea for a project and create a presentation for it.'}/>
           </div>
         </div>
-        <div id="challenges" className="pb-20 pt-[35rem] lg:pt-[0rem] lg:py-16 xl:h-screen xl:py-0">
-          <div className="lg:pt-[17rem]">
-            <h2 className='text-6xl text-white font-bold text-center lg:mt-[2.75rem] md:text-8xl'>challenges</h2>
+        <div id="challenges" className="pb-20 pt-[35rem] lg:pt-[0rem] lg:py-0 lg:h-screen">
+          <div className="md:pt-[12rem] lg:pt-[17rem]">
+            <h2 className='text-6xl text-white font-bold text-center lg:mt-[2.75rem] md:text-8xl'>prizes</h2>
             {/*pic + challenges*/}
-            <div className='flex flex-col justify-evenly pt-12 space-y-10 relative lg:flex-row'>
+            <div className='flex flex-col justify-evenly pb-12 space-y-10 relative lg:flex-row'>
               {/*gif*/}
               <div className='md:w-1/2 mx-auto px-16 md:px-0 lg:ml-10 lg:my-auto xl:pt-24 xl:px-20'>
                 <Image src={cabinDuck} alt='duck in challenges'/>
               </div>
               {/*challenges*/}
-              <div className='px-8 sm:px-20 md:px-24 grid grid-flow-col grid-cols-1 grid-rows-4 gap-6 lg:w-2/3 lg:grid-cols-2 lg:grid-rows-2 xl:mx-0 xl:w-2/3'>
-                <ChallengeInfo chName={'challenge 1'} chPar={'coming soon...'}/>
-                <ChallengeInfo chName={'challenge 2'} chPar={'coming soon...'}/>
-                <ChallengeInfo chName={'challenge 3'} chPar={'coming soon...'}/>
-                <ChallengeInfo chName={'challenge 4'} chPar={'coming soon...'}/>
+              <div className='px-8 sm:px-20 md:px-24 grid grid-flow-col grid-cols-1 grid-rows-6 gap-6 lg:w-5/6 lg:grid-cols-2 lg:grid-rows-3 xl:mx-0 xl:w-2/3'>
+                <ChallengeInfo chName={'1st Place - Hack'} chPar={'Ducky One 2 Mechanical Keyboard'}/>
+                <ChallengeInfo chName={'2nd Place - Hack'} chPar={'Fujifilm Instax Mini 11 Instant Camera'}/>
+                <ChallengeInfo chName={'3rd Place - Hack'} chPar={'HyperX Cloud Stinger Core - Wireless Gaming Headset'}/>
+                <ChallengeInfo chName={'1st Place - Prototype'} chPar={'XPPen StarG640 Digital Graphics 6x4 Inch Art Tablet'}/>
+                <ChallengeInfo chName={'Funniest - Overall'} chPar={'LEGO Star Wars The Mandalorian & The Child Set'}/>
+                <ChallengeInfo chName={'Most Impactful - Overall'} chPar={'Antique World Map - 1000 Piece Jigsaw Puzzle'}/>
               </div>
             </div>
           </div>
@@ -312,6 +314,11 @@ export default function Home() {
                     <div>
                       <h3 className='text-c9 font-bold'>discord server</h3> 
                       <a href={DISCORD_LINK} className='text-c4 hover:text-white' target='_blank' rel='noreferrer'>https://discord.gg/fVKDT6Ra5s</a>
+                    </div>
+                    {/*devpost*/}
+                    <div>
+                      <h3 className='text-c9 font-bold'>devpost</h3> 
+                      <a href={DEVPOST_LINK} className='text-c4 hover:text-white' target='_blank' rel='noreferrer'>https://hacktams-2023.devpost.com</a>
                     </div>
                   </div>
                 </div>

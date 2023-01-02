@@ -24,7 +24,7 @@ function NavBarPage(props) {
                 <div className='hidden space-x-8 text-white font-[550] text-lg lg:flex flex-row'>
                     <a href="#about" className='hover:text-c5'>about</a>
                     <a href="#tracks" className='hover:text-c5'>tracks</a>
-                    <a href="#challenges" className='hover:text-c5'>challenges</a>
+                    <a href="#challenges" className='hover:text-c5'>prizes</a>
                     <a href="#faq" className='hover:text-c5'>faq</a>
                     <a href="#sponsors" className='hover:text-c5'>sponsors</a>
                     <a href={REGISTRATION_LINK} target='_blank' rel='noreferrer' className='hover:text-c5'>registration</a>
@@ -39,7 +39,7 @@ function NavBarPage(props) {
                 <div id="menu" className="absolute flex flex-col items-center self-end py-10 mt-10 space-y-6 font-bold bg-white left-6 right-6 drop-shadow-md sm:w-auto sm:self-center mt-20 z-40">
                     <a href="#about" className='hover:text-c18'>about</a>
                     <a href="#tracks" className='hover:text-c18'>tracks</a>
-                    <a href="#challenges" className='hover:text-c18'>challenges</a>
+                    <a href="#challenges" className='hover:text-c18'>prizes</a>
                     <a href="#faq" className='hover:text-c18'>faq</a>
                     <a href="#sponsors" className='hover:text-c18'>sponsors</a>
                     <a href={REGISTRATION_LINK} target='_blank' rel='noreferrer' className='hover:text-c18'>registration</a>
