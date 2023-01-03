@@ -123,7 +123,7 @@ export default function Home() {
       <div id='about' className="py-12 bg-cover bg-[url('../backgrounds/aboutBg.PNG')] bg-[length:100%_100%]">
         <h1 className='text-c3 text-[80px] text-center font-bold'>about</h1>
         {/*about info*/}
-        <div className='flex flex-col-reverse m-auto justify-around my-6 lg:flex-row lg:my-12 lg:w-2/3'> 
+        <div className='flex flex-col-reverse m-auto justify-around my-6 lg:flex-row lg:space-x-8 lg:my-8 lg:w-2/3'> 
           {/*image*/} 
           <div className='max-w-sm mt-12 mx-auto px-6 lg:px-0 lg:my-auto'>
             <Image src={hacktams} className='rounded-xl' alt='picture from hacktams 2021'/>
@@ -144,31 +144,31 @@ export default function Home() {
         </div>
       </div>
 
-      <div id='tracks_challenges' className="bg-[url('../backgrounds/ZZ_NEW_Cabin.PNG')] sm:bg-[url('../backgrounds/Z_Shorter_TC.PNG')] lg:bg-[url('../backgrounds/Z_Short_traincabin_cropped.PNG')] xl:bg-[length:100%_100%] bg-no-repeat bg-center bg-cover">
+      <div id='tracks_challenges' className="bg-[url('../backgrounds/ZZ_NEW_Cabin.PNG')] sm:bg-[url('../backgrounds/Z_Shorter_TC.PNG')] lg:bg-[url('../backgrounds/ZZ_NEW_Cabin.PNG')] bg-no-repeat bg-center bg-cover"> {/*xl:bg-[length:120%_120%] lg:bg-[url('../backgrounds/Z_Short_traincabin_cropped.PNG')]*/}
         <div id="tracks" className='py-36 xl:h-screen'>
           {/*title*/}
           <div className="">
-            <h2 className='text-white text-7xl text-center font-bold lg:text-8xl lg:pt-16'>tracks</h2>
+            <h2 className='text-white text-7xl text-center font-bold lg:text-8xl -mt-20'>tracks</h2>
           </div>
           {/*tracks*/}
-          <div className='flex flex-col items-start justify-evenly mx-auto space-y-8 px-4 lg:w-5/6 lg:h-1/2 lg:pt-44 lg:flex-row lg:space-y-0'>
+          <div className='flex flex-col items-start justify-evenly mx-auto space-y-8 px-4 lg:w-5/6 lg:h-1/2 lg:pt-28 lg:flex-row lg:space-y-0'>
             {/*track 1*/}
             <TrackInfo trackName={'hack track'} trackPar={'The hack track is geared towards students who have experience in computer science and engineering. Students will design and prototype a project using their technical skills and the latest technologies.'}/>
             {/*track 2*/}
             <TrackInfo trackName={'prototype track'} trackPar={'The prototype track is for participants who have little to no coding experience. Students will come up with a creative idea for a project and create a presentation for it.'}/>
           </div>
         </div>
-        <div id="challenges" className="pb-20 pt-[35rem] lg:pt-[0rem] lg:py-0 lg:h-screen">
+        <div id="challenges" className="pb-20 pt-[20rem] lg:-pt-10 lg:py-0 lg:h-screen">
           <div className="md:pt-[12rem] lg:pt-[17rem]">
-            <h2 className='text-6xl text-white font-bold text-center lg:mt-[2.75rem] md:text-8xl'>prizes</h2>
+            <h2 className='text-6xl text-white font-bold text-center lg:-mt-[10rem] md:text-8xl'>prizes</h2>
             {/*pic + challenges*/}
-            <div className='flex flex-col justify-evenly pb-12 space-y-10 relative lg:flex-row'>
+            <div className='flex flex-col justify-evenly space-y-10 relative xl:flex-row lg:pt-10 xl:pt-32'>
               {/*gif*/}
-              <div className='md:w-1/2 mx-auto px-16 md:px-0 lg:ml-10 lg:my-auto xl:pt-24 xl:px-20'>
+              <div className='md:w-1/2 mx-auto px-16 md:px-0 lg:w-1/4 lg:my-auto xl:pt-24 xl:px-20 xl:w-1/2'>
                 <Image src={cabinDuck} alt='duck in challenges'/>
               </div>
               {/*challenges*/}
-              <div className='px-8 sm:px-20 md:px-24 grid grid-flow-col grid-cols-1 grid-rows-6 gap-6 lg:w-5/6 lg:grid-cols-2 lg:grid-rows-3 xl:mx-0 xl:w-2/3'>
+              <div className='px-8 sm:px-20 md:px-24 grid grid-flow-col grid-cols-1 grid-rows-6 gap-6 lg:w-5/6 lg:grid-cols-3 lg:grid-rows-2 lg:mx-auto xl:mx-0 xl:w-2/3'>
                 <ChallengeInfo chName={'1st Place - Hack'} chPar={'Ducky One 2 Mechanical Keyboard'}/>
                 <ChallengeInfo chName={'2nd Place - Hack'} chPar={'Fujifilm Instax Mini 11 Instant Camera'}/>
                 <ChallengeInfo chName={'3rd Place - Hack'} chPar={'HyperX Cloud Stinger Core - Wireless Gaming Headset'}/>
