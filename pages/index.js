@@ -47,7 +47,7 @@ export default function Home() {
     },
     {
         question: 'who is eligible to participate?', 
-        answer: 'hackTAMS is exclusively targeted towards high school students.',
+        answer: 'hackTAMS is targeted towards high school students. All participants who are under 18 and planning to participate in person must fill out this form (https://forms.gle/B2CSnuFVRwfhZgw96) before checking in.',
         open: false
     },
     {
@@ -57,7 +57,7 @@ export default function Home() {
     },
     {
         question: 'what should i bring?', 
-        answer: 'If you\'re participating from online, all you\'ll need is a laptop. If you\'re participating in-person, you\'ll need to bring a laptop and a charger. Additionally, feel free to bring blankets, pillows, and anything else you\'ll need over the weekend. Hardware and food will be provided by us.',
+        answer: 'All you\'ll need to bring is a laptop and a charger.',
         open: false
     },
     {
@@ -78,6 +78,11 @@ export default function Home() {
     {
       question: 'when is registration?', 
       answer: 'Registration will be open from December 1 to January 27!',
+      open: false
+    },
+    {
+      question: 'when are the event logistics?', 
+      answer: 'Participants are welcome to join us at Willis Library on Saturday, January 28th from 1 pm to 11 pm (Participants may leave beforehand if needed, but they must be picked up by 11 pm. Once participants sign out, they cannot check back in). Additionally, the event will be entirely virtual on Sunday, January 29th.',
       open: false
     },
     {
