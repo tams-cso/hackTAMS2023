@@ -175,10 +175,10 @@ export default function Home() {
               {/*challenges*/}
               <div className='px-8 sm:px-20 md:px-24 grid grid-flow-col grid-cols-1 grid-rows-6 gap-6 lg:w-5/6 lg:grid-cols-3 lg:grid-rows-2 lg:mx-auto xl:mx-0 xl:w-2/3'>
                 <ChallengeInfo chName={'1st Place - Hack'} chPar={'Ducky One 2 Mechanical Keyboard'}/>
-                <ChallengeInfo chName={'2nd Place - Hack'} chPar={'Fujifilm Instax Mini 11 Instant Camera'}/>
-                <ChallengeInfo chName={'3rd Place - Hack'} chPar={'HyperX Cloud Stinger Core - Wireless Gaming Headset'}/>
-                <ChallengeInfo chName={'1st Place - Prototype'} chPar={'XPPen StarG640 Digital Graphics 6x4 Inch Art Tablet'}/>
+                <ChallengeInfo chName={'1st Place - Prototype'} chPar={'Rocketbook Smart Notebook'}/>
+                <ChallengeInfo chName={'2nd Place - Hack'} chPar={'Google Nest Hub Smart Display'}/>
                 <ChallengeInfo chName={'Funniest - Overall'} chPar={'LEGO Star Wars The Mandalorian & The Child Set'}/>
+                <ChallengeInfo chName={'3rd Place - Hack'} chPar={'Fujifilm Instax Mini 11 Instant Camera'}/>
                 <ChallengeInfo chName={'Most Impactful - Overall'} chPar={'Antique World Map - 1000 Piece Jigsaw Puzzle'}/>
               </div>
             </div>
