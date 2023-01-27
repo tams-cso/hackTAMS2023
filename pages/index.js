@@ -142,10 +142,10 @@ export default function Home() {
         <h1 className='text-c3 text-[80px] text-center font-bold'>events</h1>
         <h2 className='text-c3 text-[30px] text-center'>join us for community, networking opportunities, and fun!</h2>
         <div className='flex flex-col justify-center -mt-6 py-12 px-8 items-stretch lg:flex-row lg:space-x-10 lg:px-28'>
-          <AboutItem title={'workshops'} img={workshops} description={'We will be offering workshops for both beginner and advanced hackers who want to expand their toolkit for project building. The workshops that we will be offering are Intro to App Development, Intro to React, and Intro to Machine Learning.'}/>
-          <AboutItem title={'guest speakers'} img={guest_speaker1} description={'We will be inviting multiple distinguished figures from the tech industry to come and speak at hackTAMS. This event is meant to help hackers gain insight into what it\'s like working in the tech industry and how to get there. More information coming soon...'}/>
-          <AboutItem title={'cs college panel'} img={college} description={'We will be inviting undergraduate computer science students from major universities to come and speak at hackTAMS. This event is meant to help hackers learn more about the college application process and what studying computer science is like in college. More information coming soon...'}/>
-          <AboutItem title={'fun activities'} img={fun_activities} description={'In addition to the informative events, we will also be hosting various fun activities throughout the hackathon. For example, a Mario Kart and Super Smash Bros tournament! More information coming soon...'}/>
+          <AboutItem title={'workshops'} img={workshops} description={'We will be offering workshops for hackers who want to expand their toolkit for project building. Ex: an Intro to Machine Learning workshop!'}/>
+          <AboutItem title={'guest speakers'} img={guest_speaker1} description={'We will be inviting multiple distinguished figures from the tech industry to come and speak at hackTAMS. This event is meant to help hackers gain insight into what it\'s like working in the tech industry and how to get there. We will have speakers from Google, JP Morgan, UW, and UTD!'}/>
+          <AboutItem title={'cs college panel'} img={college} description={'We will be inviting college admissions counselors to come and speak at hackTAMS. This event is meant to help hackers learn more about the college application process and what studying computer science is like in college. We will have representatives from Purdue, Texas A&M, SMU, Texas Tech, GWU, and UTA!'}/>
+          <AboutItem title={'fun activities'} img={fun_activities} description={'In addition to the informative events, we will also be hosting various fun activities throughout the hackathon. For example, a cup-stacking and Just Dance tournament!'}/>
         </div>
       </div>
 
